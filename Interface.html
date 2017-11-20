@@ -1,31 +1,125 @@
 <html>
 <head>
-	
-	<title>Employment Application</title>
+<title>Employment Application</title>
+    
+    <title>Employment Application</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-
-</head>
 <body>
 <h1 align='center'>UNFinshed Business</h1>
 <h2 align='center'>Application For Employment</h2>   
+
+<p align="right">Application Date <input type="date" name="appDate" min="2000-01-01"></p>   
 <hr>
     
-<form id='application' name='application'>
+<p align="left">Race (Please select all that apply):</p>
+<table align="left">
+<tr align="left">
+<td><input type="checkbox" name="race" value="1">White<br></td>
+</tr>
+<tr align="left">
+<td><input type="checkbox" name="race" value="2">Black or African American<br></td>
+</tr>
+<tr align="left">
+<td><input type="checkbox" name="race" value="3">American Indian/Alaska Native<br></td>
+</tr>
+<tr align="left">
+<td><input type="checkbox" name="race" value="4">Asian<br></td>
+</tr>
+<tr align="left">
+<td><input type="checkbox" name="race" value="5">Hawaiian Native/Pacific Islander<br></td>
+</tr>
+<tr align="left">
+<td><input type="checkbox" name="race" value="6">Hispanic or Latino<br></td>
+</tr>
+<tr align="left">
+<td><input type="checkbox" name="race" value="7">Prefer not to say<br></td>
+</tr>
+</table>
     
-<table align='center'>
-    <tr>
-	<td>First Name:</td><td><input type="text" id="fName"></td><td>Last Name:</td><td><input type="text" id="lName"></td><td>Middle Name:</td><td><input type="text" id="mName"></td>
-    </tr>
-    <tr>
-        <td>Current Address</td><td>Number:</td><td><input type="text" id="aNumber"></td><td>Street:</td><td><input type="text" id="Street"></td><td>City:</td><td><input type="text" id="City"></td><td>State:</td><td><input type="text" id="State"></td><td>Zip Code:</td><td><input type="text" id="zipCode"></td>
-    </tr>
-    <tr>
-        <td>Contact number:</td><td><input type="text" id="cNumber"></td><td>Position appled for:</td><td><input type="text" id="position"></td>
-    </tr>
-    <tr>
-        <td>Email Address:</td><td><input type="text" id="email"></td>
-    </tr>
-</table>        
+<div style="text-align:center">
+<form id='application' name='application'>
+<h3 algin="center">Personal Information</h3>
+    
+    First Name:<input type="text" id="fName">
+    
+    Last Name:<input type="text" id="lName">
+    
+    Middle Name:<input type="text" id="mName">
+    
+    Gender:
+    <select>
+    <option value="Blank"></option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Perfer not to say</option>
+    </select>
+<br>
+<br>
+    Current Address:<input type="text" id="aNumber">
+
+    Street:<input type="text" id="Street">
+    
+    City:<input type="text" id="City">
+    
+    State:<input type="text" id="State">Zip Code:<input type="text" id="zipCode">
+<br>
+<br>
+    Contact number:<input type="text" id="cNumber">
+        
+    Position appled for:<input type="text" id="position">
+    
+    Email Address:<input type="text" id="email">  
+    
+    <input type="checkbox" name="US" value="8">I am eligible to work in the United States
+    
+<h3 algin="center">Contact Information</h3>
+    
+    First Name:<input type="text" id="fName">
+    
+    Last Name:<input type="text" id="lName">
+    
+    Middle Name:<input type="text" id="mName">
+    
+<br>    
+<br>
+    
+    Current Address:<input type="text" id="aNumber">
+
+    Street:<input type="text" id="Street">
+    
+    City:<input type="text" id="City">
+    
+    State:<input type="text" id="State">Zip Code:<input type="text" id="zipCode">
+<br>
+<br>
+    Contact number:<input type="text" id="cNumber">
+        
+    Relationship to Applicant:<input type="text" id="position">
+    
+    Email Address:<input type="text" id="email">
+<br>
+<br>
+<br>
+<hr>    
+    <h3 algin="center">Medical History</h3>
+    Please enter any medical condition that might prevent you from completeing the duties of the position you applied for in the are below:
+<br>
+<br>
+    <textarea rows="5" cols="75"></textarea>
+<hr>
+    <h3>Available Times</h3>
+        Full-Time<input type="radio" name="time" id="time" value="fTime">
+        Part-Time<input type="radio" name="time" id="time" value="pTime"> 
+<br>
+    <br>
+    Total time available in a week:<input type="text" id="hpw">
+<br>  
+<br>    
+    On what date ccan you start:<input type="date" name="appDate" min="2000-01-01">   
+<hr> 
+              
 </form>    
+</div>
 </body>
+</head>
 </html>
