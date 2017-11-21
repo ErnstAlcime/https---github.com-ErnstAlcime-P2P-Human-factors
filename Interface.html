@@ -5,7 +5,7 @@
     <title>Employment Application</title>
 	<link rel="stylesheet" type="text/css" href="slate.css">
     <style>
-        div,p{background-color: #99cfff;}
+        body{background-color: #99cfff;}
         </style>
     
 <script>
@@ -14,12 +14,33 @@
 {
     var fName = document.getElementById("fName").value;
     var lName = document.getElementById("lName").value;
+    var Address = document.getElementById("Address").value;
+    var Street = document.getElementById("Street").value;
+    var City = document.getElementById("City").value;
+    var State = document.getElementById("State").value;
+    var cNumber = document.getElementById("cNumber").value;
+    var email = document.getElementById("email").value;
+    var eligible = document.getElementById("eligible").checked; 
+    var hpw = document.getElementById("hpw").value;
+    var skool = document.getElementById("skool").value;
+    var sign = document.getElementById("sign").value;
     
-    
-    if(fName == "" || lName == "")
-        alert("Please enter your first and last name");
-        else{
-            document.getElementById("output").innerHTML = "You have completed the form. Have a nice day.";
+    if(fName == "" || lName == "" || Address == "" || Street == "" || City == "" || State == "" || cNumber == "" || email == "" )
+        alert("Please enter your Personal Information");
+    else if (!eligible) {
+        alert("You are not eligible to work in the US")
+    }
+    else if (hpw == ""){
+        alert("Please enter your available work times")
+    }
+    else if (skool == ""){
+        alert("Please enter your most recent completed education")
+    }
+    else if (sign == ""){
+        alert("Please sign the form once you read our terms")
+    }
+    else{
+            location.assign("success.html")
         }
         
 }
@@ -79,7 +100,7 @@
     
         <td>Email Address:<input type="text" id="email"></td>  
     
-        <td><input type="checkbox" name="US" value="8">I am eligible to work in the United States</td>
+        <td><input type="checkbox" id="eligible">I am eligible to work in the United States</td>
     </tr>
 </table>
 <br>
@@ -276,7 +297,7 @@ What is the highest diploma/degree/certificate you have earned?
 						<option value="graduate">Graduate</option>
 				</select>
 			<td>
-				<textarea name="" id=""></textarea></td>
+				<textarea name="" id="skool"></textarea></td>
 			<td>
 				<textarea name="" id=""></textarea></td>
 			<td>
@@ -337,13 +358,6 @@ Upon being hired by UNFinished Business I will undergo a trial period of sixty (
 <br>
 <br>
     <input type="button" value="Submit" onClick="valid()">
-    <table>
-    <tr>
-        <td><p id="output"></p></td>
-    </tr>
-    </table>
-
-    
 </form>    
 </div>
 </body>
