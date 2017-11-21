@@ -12,20 +12,16 @@
     
     function valid()
 {
-    var fName = document.getElementById("fName").value:
+    var fName = document.getElementById("fName").value;
     var lName = document.getElementById("lName").value;
-    var output;
     
-    if(fName==null || fName=="" || lName==null || lName ==""){
+    
+    if(fName == "" || lName == "")
         alert("Please enter your first and last name");
-        
         else{
-            output = "You have completeed the form. have a good day.";
+            document.getElementById("output").innerHTML = "You have completed the form. Have a nice day.";
         }
         
-    }
-    
-        document.getElementById("output").innerHTML=output;
 }
     
 </script>
