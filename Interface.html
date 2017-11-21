@@ -6,8 +6,30 @@
 	<link rel="stylesheet" type="text/css" href="slate.css">
     <style>
         div{background-color: #99cfff;}
-        t{background-color: lightgray;}
         </style>
+    
+<script>
+    
+    function valid()
+{
+    var fName = document.getElementById("fName").value:
+    var lName = document.getElementById("lName").value;
+    var output;
+    
+    if(fName==null || fName=="" || lName==null || lName ==""){
+        alert("Please enter your first and last name");
+        
+        else{
+            output = "You have completeed the form. have a good day.";
+        }
+        
+    }
+    
+        document.getElementById("output").innerHTML=output;
+}
+    
+</script>
+    
 </head>
 <body>
     <div style="text-align:center">
@@ -57,7 +79,7 @@
     <tr>
         <td>Contact number:<input type="text" id="cNumber"></td>
         
-        <td>Position applied for:<input type="text" id="position"></td>
+        <td>Position appled for:<input type="text" id="position"></td>
     
         <td>Email Address:<input type="text" id="email"></td>  
     
@@ -236,7 +258,7 @@ What is the highest diploma/degree/certificate you have earned? <input type="tex
 <br>
 <br>
 
-	<table style="width:100%" class="table table-striped table-hover table-bordered>
+	<table style="width:100%" class="table table-striped table-hover table-bordered">
 		
 
 		<tr align="center">
@@ -302,9 +324,28 @@ What is the highest diploma/degree/certificate you have earned? <input type="tex
 </table>
 <hr>
     
+<p>By submitting my job application, I agree that:
+Just by submitting this application does not mean that I will enter into employment with the company. Upon acceptance of a job at UNFinished Business, I understand that either myself or the company may end the employment relationship at any time, without specified notice or reason. If employed, I understand that UNFinished Business may change their benefits, policies, and procedures which may include a reduction in benefits. 
+All of the information listed above is accurate. Misrepresentation of any of this information is cause for dismissal at any time without any previous notice. I hereby give UNFinished Business permission to contact schools, previous employers (unless otherwise indicated), references, and others, and hereby release UNFinished Business from any liability in doing so. 
+I also understand that if UNFinished Business chooses to hire me I will have to undergo a pre-employment drug test as well as routine ones throughout working there. Failure to pass said tests will result in a termination of employment. 
+A detailed background check will occur upon UNFinished Business showing interest in hiring me. If I so choose, I may request UNFinished Business to provide me with additional information concerning the nature and scope of this check, as required by the fair credit reporting act. 
+Upon being hired by UNFinished Business I will undergo a trial period of sixty (60) days. During this trial period I will undergo a variety of tasks to test how well suited I am to the job and failure to fit, as deemed by UNFinished Business, may result in the end of my employment. 
+</p>
+    
+<hr>    
 <br>    
     Signature of Applicant:<input type="text" id="sign">
     Date:<input type="date" name="appDate" min="2000-01-01">
+<br>
+<br>
+    <input type="button" value="Submit" onClick="valid()">
+    <table>
+    <tr>
+        <td><p id="output"></p></td>
+    </tr>
+    </table>
+
+    
 </form>    
 </div>
 </body>
