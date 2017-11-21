@@ -3,9 +3,14 @@
 <title>Employment Application</title>
     
     <title>Employment Application</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="slate.css">
+    <style>
+        div{background-color: #99cfff;}
+        t{background-color: lightgray;}
+        </style>
 </head>
 <body>
+    <div style="text-align:center">
 <h1 align='center'>UNFinshed Business</h1>
 <h2 align='center'>Application For Employment</h2>   
 <p align="right">Application Date <input type="date" name="appDate" min="2000-01-01"></p>   
@@ -13,62 +18,77 @@
     
 
     
-<div style="text-align:center">
+
 <form id='application' name='application'>
-<h3 algin="center">Personal Information</h3>
+<h3 align="center">Personal Information</h3>
     
-    First Name:<input type="text" id="fName">
-    
-    Last Name:<input type="text" id="lName">
-    
-    Middle Name:<input type="text" id="mName">
-    
-    Gender:
-    <select>
-    <option value="Blank"></option>
-    <option value="Male">Male</option>
-    <option value="Female">Female</option>
-    <option value="Other">Perfer not to say</option>
-    </select>
-<br>
-<br>
-    Current Address:<input type="text" id="aNumber">
-
-    Street:<input type="text" id="Street">
-    
-    City:<input type="text" id="City">
-    
-    State:<input type="text" id="State">Zip Code:<input type="text" id="zipCode">
-<br>
-<br>
-    Contact number:<input type="text" id="cNumber">
+<table align="center">
+    <tr>
+    <td>First Name:<input type="text" id="fName"></td>
         
-    Position appled for:<input type="text" id="position">
-    
-    Email Address:<input type="text" id="email">  
-    
-    <input type="checkbox" name="US" value="8">I am eligible to work in the United States
-    
-<h3 algin="center">Contact Information</h3>
-    
-    First Name:<input type="text" id="fName">
-    
-    Last Name:<input type="text" id="lName">
-    
-    Middle Name:<input type="text" id="mName">
-    
-<br>    
-<br>
-    
-    Current Address:<input type="text" id="aNumber">
+    <td>Last Name:<input type="text" id="lName"></td>
 
-    Street:<input type="text" id="Street">
+    <td>Middle Initial:<input type="text" id="mName"></td>
+    <td>
+        Gender:
+        <select>
+            <option value="Blank"></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Perfer not to say</option>
+        </select>
+        </td>
+    </tr>
+    </table>
+<br>    
+<table align="center">
+        <tr>
+            <td>Current Address:<input type="text" id="Address"></td>
+
+            <td>Street:<input type="text" id="Street"></td>
     
-    City:<input type="text" id="City">
+            <td>City:<input type="text" id="City"></td>
     
-    State:<input type="text" id="State">Zip Code:<input type="text" id="zipCode">
+            <td>State:<input type="text" id="State">Zip Code:<input type="text" id="zipCode"></td>
+        </tr>
+</table>
 <br>
+<table align="center">
+    <tr>
+        <td>Contact number:<input type="text" id="cNumber"></td>
+        
+        <td>Position appled for:<input type="text" id="position"></td>
+    
+        <td>Email Address:<input type="text" id="email"></td>  
+    
+        <td><input type="checkbox" name="US" value="8">I am eligible to work in the United States</td>
+    </tr>
+</table>
 <br>
+    <h3 algin="center">Contact Information</h3>
+<table align="center">
+    <tr>
+        <td>First Name:<input type="text" id="fName"></td>
+    
+        <td>Last Name:<input type="text" id="lName"></td>
+    
+        <td>Middle Name:<input type="text" id="mName"></td>
+    </tr>
+</table>
+<br>    
+<table align="center">
+    <tr>
+        <td>Current Address:<input type="text" id="aNumber"></td>
+
+        <td>Street:<input type="text" id="Street"></td>
+    
+        <td>City:<input type="text" id="City"></td>
+    
+        <td>State:<input type="text" id="State">Zip Code:<input type="text" id="zipCode"></td>
+    </tr>
+</table>
+<br>
+
     Contact number:<input type="text" id="cNumber">
         
     Relationship to Applicant:<input type="text" id="position">
@@ -94,7 +114,8 @@
 <br>    
     On what date can you start:<input type="date" name="appDate" min="2000-01-01">   
 <hr> 
-<p>Race (Please select all that apply):</p>
+ 
+    <p>Race (Please select all that apply):</p>
 <table align="center">
 <tr>
 <td><input type="checkbox" name="race" value="1">White<br></td>
@@ -117,8 +138,12 @@
 <tr>
 <td><input type="checkbox" name="race" value="7">Prefer not to say<br></td>
 </tr>
-</table> 
+</table>
+<hr>
     
+<br>    
+    Signature of Applicant:<input type="text" id="sign">
+    Date:<input type="date" name="appDate" min="2000-01-01">
 </form>    
 </div>
 </body>
